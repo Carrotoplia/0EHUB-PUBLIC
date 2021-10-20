@@ -1,0 +1,26 @@
+local queueteleport = syn and syn.queue_on_teleport or queue_on_teleport or fluxus and fluxus.queue_on_teleport
+queueteleport(loadstring(readfile("")))()
+local hardcore = true
+local private = true
+
+local args = {
+    [1] = "Desert Temple",
+    [2] = "Easy", 
+    [3] = 0, 
+    [4] = hardcore, 
+    [5] = private, 
+    [6] = false } 
+game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(args))
+local hardcore = true
+local private = true
+
+local args = {
+    [1] = "Desert Temple",
+    [2] = "Easy",
+    [3] = 0,
+    [4] = hardcore,
+    [5] = private,
+    [6] = false
+}
+
+game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(args))
