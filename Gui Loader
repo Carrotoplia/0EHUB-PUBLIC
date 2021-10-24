@@ -7,3 +7,24 @@ local colors = {
     ElementColor = Color3.fromRGB(143, 253, 143)
 }
 local Window = Library.CreateLib("0EHUB", colors)
+local universal = Window:NewTab("0EHUB UNIVERSAL")
+local LocalPlayer = universal:NewSection("LocalPlayer")
+LocalPlayer:NewSlider("WalkSpeed", "Scale Up and down your Walkspeed!", 300, 16, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+LocalPlayer:NewSlider("JumpPower", "Scale Up and down your JumpPower!", 300, 20, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+local noclip = nil
+LocalPlayer:NewToggle("Noclip", "Turns On Noclip", function(state)
+    if state then
+        noclip = true
+    else
+        noclip = false
+    end
+end)
+
+game:GetService('RunService').Stepped:connect(function()
+if noclip == true then
+    game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end end)
