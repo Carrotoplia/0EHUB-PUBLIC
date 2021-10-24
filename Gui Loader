@@ -1,1 +1,9 @@
-
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local colors = {
+    SchemeColor = Color3.fromRGB(82, 236, 82),
+    Background = Color3.fromRGB(75, 95, 107), -- MAIN BACKGROUND
+    Header = Color3.fromRGB(45, 58, 65), -- SIDE Background
+    TextColor = Color3.fromRGB(0, 0, 0), -- TEXT COLOR FOR EVERYTHING
+    ElementColor = Color3.fromRGB(143, 253, 143)
+}
+local Window = Library.CreateLib("0EHUB", colors)
