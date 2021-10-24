@@ -7,6 +7,7 @@ local colors = {
     ElementColor = Color3.fromRGB(143, 253, 143)
 }
 local Window = Library.CreateLib("0EHUB", colors)
+wait(0.1)
 local universal = Window:NewTab("0EHUB UNIVERSAL")
 local LocalPlayer = universal:NewSection("LocalPlayer")
 LocalPlayer:NewSlider("WalkSpeed", "Scale Up and down your Walkspeed!", 300, 16, function(s)
