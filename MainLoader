@@ -1,5 +1,11 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Carrotoplia/0EHUB-PUBLIC/main/Gui%20Loader", true))()
 
+if isfolder("0EHUB") ~= true then
+makefolder("0EHUB")
+makefolder("0EHUB/0EHUB_PROFILES")
+makefolder("0EHUB/CODE")
+end
+
 if game.PlaceId == 5278850819 then
 
 end
