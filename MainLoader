@@ -7,5 +7,5 @@ makefolder("0EHUB/CODE")
 end
 
 if game.PlaceId == 4399032158 then
-https://raw.githubusercontent.com/Carrotoplia/0EHUB-PUBLIC/main/Thick%20Legends
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Carrotoplia/0EHUB-PUBLIC/main/Thick%20Legends", true))()
 end
